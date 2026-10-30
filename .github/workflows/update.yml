@@ -1,4 +1,4 @@
-name: Aggiorna calendari calcio
+name: Aggiorna calendario
 
 on:
   workflow_dispatch:
