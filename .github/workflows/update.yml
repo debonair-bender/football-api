@@ -1,12 +1,13 @@
 name: Aggiorna Serie B
-permissions:
-  contents: write
 
 on:
   workflow_dispatch:
 
   schedule:
     - cron: "3 * * * *"
+
+permissions:
+  contents: write
 
 jobs:
   update:
