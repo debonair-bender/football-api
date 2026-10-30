@@ -2,7 +2,7 @@
   "competitions": {
     "serie-a": {
       "name": "Serie A",
-      "enabled": false,
+      "enabled": true,
       "script": "scrapers/serie_a.py",
       "seasons": {
         "2026-2027": {
