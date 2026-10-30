@@ -1,4 +1,5 @@
-name: Aggiorna calendario
+
+name: Aggiorna calendari calcio
 
 on:
   workflow_dispatch:
@@ -9,13 +10,14 @@ permissions:
   contents: write
 
 concurrency:
-  group: football-calendar-update
+  group: football-data-update
   cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 15
+
     steps:
       - name: Scarica repository
         uses: actions/checkout@v4
@@ -30,22 +32,18 @@ jobs:
       - name: Installa dipendenze
         run: python -m pip install -r requirements.txt
 
-      - name: Scraping Serie B
-        run: python scrapers/serie_b.py
-
-      - name: Scraping Serie A
-        run: python scrapers/serie_a.py
-
-      - name: Scraping Champions League
-        run: python scrapers/champions_league.py
+      - name: Aggiorna competizioni abilitate
+        run: python main.py
 
       - name: Pubblica JSON aggiornati
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add data/
+
           if git diff --cached --quiet; then
-            echo "Nessun aggiornamento"
+            echo "Nessuna modifica da pubblicare"
           else
             git commit -m "Aggiorna calendari calcio"
             git push
