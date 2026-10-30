@@ -94,3 +94,36 @@ def collect(*, slug, competition, base_url, expected_matches=None, expected_roun
         counts = Counter(m["round"] for m in result_matches)
         if set(counts) != set(range(1, expected_rounds + 1)):
             raise ValueError(f"{slug}: incomplete rounds: {sorted(counts)}")
+    
+    # Percorso automatico per competizione e stagione
+    output_file = ROOT / "data" / slug / f"{SEASON_FILE}.json"
+
+    # Crea automaticamente le cartelle mancanti
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+
+    # Evita di riscrivere file con dati identici
+    if output_file.exists():
+        previous = json.loads(output_file.read_text(encoding="utf-8"))
+
+        if previous.get("matches") == result_matches:
+            print(f"{slug}: nessuna modifica")
+            return
+
+    result = {
+        "competition": competition,
+        "season": SEASON,
+        "total": len(result_matches),
+        "updatedAt": datetime.now(timezone.utc).isoformat(),
+        "matches": result_matches
+    }
+
+    # Scrittura temporanea per evitare file incompleti
+    temp_file = output_file.with_suffix(".json.tmp")
+
+    temp_file.write_text(
+        json.dumps(result, indent=2, ensure_ascii=False),
+        encoding="utf-8"
+    )
+
+    temp_file.replace(output_file)
+    print(f"{slug}: salvato {output_file}")
