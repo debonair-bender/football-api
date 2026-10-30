@@ -1,4 +1,6 @@
 name: Aggiorna Serie B
+permissions:
+  contents: write
 
 on:
   workflow_dispatch:
