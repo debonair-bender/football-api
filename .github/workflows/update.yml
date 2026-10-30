@@ -1,0 +1,29 @@
+name: Aggiorna Serie B
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "3 * * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Scarica repository
+        uses: actions/checkout@v4
+
+      - name: Configura Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Esegui script
+        run: python test.py
+
+      - name: Carica JSON generato
+        uses: actions/upload-artifact@v4
+        with:
+          name: serie-b-json
+          path: serie-b.json
