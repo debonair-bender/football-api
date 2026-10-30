@@ -1,1 +1,35 @@
-test
+
+{
+  "competitions": {
+    "serie-a": {
+      "name": "Serie A",
+      "enabled": false,
+      "scraper": "serie_a",
+      "seasons": {
+        "2026-2027": {
+          "enabled": true
+        }
+      }
+    },
+    "serie-b": {
+      "name": "Serie B",
+      "enabled": true,
+      "scraper": "serie_b",
+      "seasons": {
+        "2026-2027": {
+          "enabled": true
+        }
+      }
+    },
+    "champions-league": {
+      "name": "UEFA Champions League",
+      "enabled": true,
+      "scraper": "champions_league",
+      "seasons": {
+        "2026-2027": {
+          "enabled": true
+        }
+      }
+    }
+  }
+}
