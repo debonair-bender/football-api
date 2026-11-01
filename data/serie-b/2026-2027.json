@@ -2,7 +2,7 @@
   "competition": "Serie B",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-10-30T23:28:49.861496+00:00",
+  "updatedAt": "2026-11-01T00:51:01.937884+00:00",
   "matches": [
     {
       "id": "202519",
@@ -1274,9 +1274,9 @@
       "awayTeam": "Benevento",
       "stadium": "STADIO GIOVANNI ZINI",
       "city": "CREMONA",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 2,
+      "awayScore": 0
     },
     {
       "id": "202607",
@@ -1288,9 +1288,9 @@
       "awayTeam": "Mantova",
       "stadium": "ALBERTO BRAGLIA",
       "city": "MODENA",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": "202608",
@@ -1302,9 +1302,9 @@
       "awayTeam": "Cesena",
       "stadium": "STADIO DRUSO",
       "city": "BOZEN",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": "202609",
@@ -1316,9 +1316,9 @@
       "awayTeam": "Padova",
       "stadium": "STADIO NICOLA CERAVOLO",
       "city": "CATANZARO",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": "202600",
@@ -1330,9 +1330,9 @@
       "awayTeam": "Virtus Entella",
       "stadium": "LUIGI FERRARIS",
       "city": "GENOA",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 2,
+      "awayScore": 0
     },
     {
       "id": "202602",

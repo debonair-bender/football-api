@@ -2,7 +2,7 @@
   "competition": "UEFA Champions League",
   "season": "2026/2027",
   "total": 234,
-  "updatedAt": "2026-10-30T23:28:53.642632+00:00",
+  "updatedAt": "2026-11-01T00:51:05.863310+00:00",
   "matches": [
     {
       "id": "198857",
@@ -1496,7 +1496,7 @@
       "round": 1,
       "homeTeam": "Slavia Praha",
       "awayTeam": "Lens",
-      "stadium": "SINOBO STADIUM",
+      "stadium": "FORTUNA ARENA",
       "city": "PRAGUE",
       "status": "PLAYED",
       "homeScore": 2,

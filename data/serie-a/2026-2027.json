@@ -2,7 +2,7 @@
   "competition": "Serie A",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-10-31T12:47:05.251424+00:00",
+  "updatedAt": "2026-11-01T00:50:55.634313+00:00",
   "matches": [
     {
       "id": "186094",
@@ -1274,9 +1274,9 @@
       "awayTeam": "Monza",
       "stadium": "STADIO RENATO DALL'ARA",
       "city": "BOLOGNA",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "id": "186187",
@@ -1288,9 +1288,9 @@
       "awayTeam": "AS Roma",
       "stadium": "BLUENERGY STADIUM",
       "city": "UDINE",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 2,
+      "awayScore": 5
     },
     {
       "id": "186186",
@@ -1302,9 +1302,9 @@
       "awayTeam": "Inter",
       "stadium": "SAN SIRO/GIUSEPPE MEAZZA",
       "city": "MILAN",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "id": "186193",
