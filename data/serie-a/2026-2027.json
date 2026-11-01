@@ -2,7 +2,7 @@
   "competition": "Serie A",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-01T00:50:55.634313+00:00",
+  "updatedAt": "2026-11-01T12:40:46.196227+00:00",
   "matches": [
     {
       "id": "186094",
@@ -1316,9 +1316,9 @@
       "awayTeam": "Venezia",
       "stadium": "STADIO GIUSEPPE SINIGAGLIA",
       "city": "COMO",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "LIVE",
+      "homeScore": 1,
+      "awayScore": 0
     },
     {
       "id": "186184",
