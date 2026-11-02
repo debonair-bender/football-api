@@ -2,7 +2,7 @@
   "competition": "Serie B",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-01T12:40:53.185307+00:00",
+  "updatedAt": "2026-11-02T00:51:44.437158+00:00",
   "matches": [
     {
       "id": "202519",
@@ -1344,9 +1344,9 @@
       "awayTeam": "Juve Stabia",
       "stadium": "CARLO CASTELLANI",
       "city": "EMPOLI",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 2,
+      "awayScore": 2
     },
     {
       "id": "202605",
@@ -1358,9 +1358,9 @@
       "awayTeam": "Pisa",
       "stadium": "PARTENIO-ADRIANO LOMBARDI",
       "city": "AVELLINO",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 2,
+      "awayScore": 0
     },
     {
       "id": "202606",
@@ -1372,9 +1372,9 @@
       "awayTeam": "Ascoli",
       "stadium": "STADIO CITTÀ DI AREZZO",
       "city": "AREZZO",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": "202601",
@@ -1386,9 +1386,9 @@
       "awayTeam": "Carrarese",
       "stadium": "MARC'ANTONIO BENTEGODI",
       "city": "VERONA",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 3,
+      "awayScore": 0
     },
     {
       "id": "202604",
@@ -1400,9 +1400,9 @@
       "awayTeam": "Vicenza Virtus",
       "stadium": "RENZO BARBERA",
       "city": "PALERMO",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "id": "202611",

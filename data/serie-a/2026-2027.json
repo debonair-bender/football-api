@@ -2,7 +2,7 @@
   "competition": "Serie A",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-01T12:40:46.196227+00:00",
+  "updatedAt": "2026-11-02T00:51:37.559486+00:00",
   "matches": [
     {
       "id": "186094",
@@ -1316,7 +1316,7 @@
       "awayTeam": "Venezia",
       "stadium": "STADIO GIUSEPPE SINIGAGLIA",
       "city": "COMO",
-      "status": "LIVE",
+      "status": "PLAYED",
       "homeScore": 1,
       "awayScore": 0
     },
@@ -1330,9 +1330,9 @@
       "awayTeam": "Cagliari",
       "stadium": "STADIO OLIMPICO",
       "city": "ROME",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "id": "186191",
@@ -1344,9 +1344,9 @@
       "awayTeam": "Torino",
       "stadium": "PSC ARENA",
       "city": "FROSINONE",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 2,
+      "awayScore": 0
     },
     {
       "id": "186192",
@@ -1358,9 +1358,9 @@
       "awayTeam": "Genoa",
       "stadium": "STADIO VIA DEL MARE",
       "city": "LECCE",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": "186188",
@@ -1372,9 +1372,9 @@
       "awayTeam": "Napoli",
       "stadium": "ALLIANZ STADIUM",
       "city": "TURIN",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 2,
+      "awayScore": 0
     },
     {
       "id": "186185",
