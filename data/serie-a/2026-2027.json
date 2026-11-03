@@ -2,7 +2,7 @@
   "competition": "Serie A",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-02T00:51:37.559486+00:00",
+  "updatedAt": "2026-11-03T00:51:25.337744+00:00",
   "matches": [
     {
       "id": "186094",
@@ -1386,9 +1386,9 @@
       "awayTeam": "Fiorentina",
       "stadium": "MAPEI STADIUM – CITTÀ DEL TRICOLORE",
       "city": "REGGIO EMILIA",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 2,
+      "awayScore": 4
     },
     {
       "id": "186189",
@@ -1400,9 +1400,9 @@
       "awayTeam": "Parma",
       "stadium": "NEW BALANCE ARENA",
       "city": "BERGAMO",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 0,
+      "awayScore": 3
     },
     {
       "id": "186201",
