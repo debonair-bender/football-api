@@ -2,7 +2,7 @@
   "competition": "Serie B",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-02T00:51:44.437158+00:00",
+  "updatedAt": "2026-11-04T12:54:13.161093+00:00",
   "matches": [
     {
       "id": "202519",
@@ -1412,7 +1412,7 @@
       "round": 11,
       "homeTeam": "Ascoli",
       "awayTeam": "Palermo",
-      "stadium": "STADIO CINO E LILLO DEL DUCA",
+      "stadium": "CINO E LILLO DEL DUCA",
       "city": "ASCOLI PICENO",
       "status": "DA GIOCARE",
       "homeScore": null,

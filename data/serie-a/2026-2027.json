@@ -2,7 +2,7 @@
   "competition": "Serie A",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-03T00:51:25.337744+00:00",
+  "updatedAt": "2026-11-04T12:54:06.777449+00:00",
   "matches": [
     {
       "id": "186094",
@@ -1412,7 +1412,7 @@
       "round": 11,
       "homeTeam": "Venezia",
       "awayTeam": "Udinese",
-      "stadium": "STADIO PIERLUIGI PENZO",
+      "stadium": "STADIO PIER LUIGI PENZO",
       "city": "VENICE",
       "status": "TO BE PLAYED",
       "homeScore": null,
