@@ -2,7 +2,7 @@
   "competition": "UEFA Champions League",
   "season": "2026/2027",
   "total": 234,
-  "updatedAt": "2026-11-02T12:56:08.722584+00:00",
+  "updatedAt": "2026-11-04T00:52:34.519034+00:00",
   "matches": [
     {
       "id": "198857",
@@ -2030,9 +2030,9 @@
       "awayTeam": "Sporting CP",
       "stadium": "STAMFORD BRIDGE",
       "city": "LONDON",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": "208460",
@@ -2044,9 +2044,9 @@
       "awayTeam": "VfB Stuttgart",
       "stadium": "RAMS PARK",
       "city": "ISTANBUL",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 2,
+      "awayScore": 0
     },
     {
       "id": "208341",
@@ -2058,9 +2058,9 @@
       "awayTeam": "AS Roma",
       "stadium": "OLD TRAFFORD",
       "city": "MANCHESTER",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "id": "208393",
@@ -2072,9 +2072,9 @@
       "awayTeam": "Inter",
       "stadium": "STADION FEIJENOORD",
       "city": "ROTTERDAM",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 0,
+      "awayScore": 3
     },
     {
       "id": "208403",
@@ -2086,9 +2086,9 @@
       "awayTeam": "Lille",
       "stadium": "ASPMYRA STADION",
       "city": "HAKATA",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": "208420",
@@ -2100,9 +2100,9 @@
       "awayTeam": "Aston Villa",
       "stadium": "SPOTIFY CAMP NOU",
       "city": "BARCELONA",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 3,
+      "awayScore": 0
     },
     {
       "id": "208424",
@@ -2114,9 +2114,9 @@
       "awayTeam": "Bayern München",
       "stadium": "RIYADH AIR METROPOLITANO",
       "city": "MADRID",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 0,
+      "awayScore": 2
     },
     {
       "id": "208428",
@@ -2128,9 +2128,9 @@
       "awayTeam": "Paris Saint Germain",
       "stadium": "ESTADIO DE LA CERÁMICA",
       "city": "VILLARREAL",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 0,
+      "awayScore": 6
     },
     {
       "id": "208478",
@@ -2142,9 +2142,9 @@
       "awayTeam": "Slovan Bratislava",
       "stadium": "RAIFFEISEN ARENA",
       "city": "LINZ",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 4,
+      "awayScore": 0
     },
     {
       "id": "208452",
