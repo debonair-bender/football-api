@@ -2,7 +2,7 @@
   "competition": "Serie A",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-04T12:54:06.777449+00:00",
+  "updatedAt": "2026-11-05T12:58:37.576958+00:00",
   "matches": [
     {
       "id": "186094",
@@ -1440,7 +1440,7 @@
       "round": 11,
       "homeTeam": "Torino",
       "awayTeam": "Lecce",
-      "stadium": "STADIO OLIMPICO DI TORINO",
+      "stadium": "STADIO OLIMPICO GRANDE TORINO",
       "city": "TURIN",
       "status": "TO BE PLAYED",
       "homeScore": null,
@@ -1454,7 +1454,7 @@
       "round": 11,
       "homeTeam": "Parma",
       "awayTeam": "Bologna",
-      "stadium": "STADIO ENNIO TARDINI",
+      "stadium": "ENNIO TARDINI",
       "city": "PARMA",
       "status": "TO BE PLAYED",
       "homeScore": null,

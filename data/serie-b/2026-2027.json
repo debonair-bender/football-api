@@ -2,7 +2,7 @@
   "competition": "Serie B",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-04T12:54:13.161093+00:00",
+  "updatedAt": "2026-11-05T12:58:43.802850+00:00",
   "matches": [
     {
       "id": "202519",
@@ -1426,7 +1426,7 @@
       "round": 11,
       "homeTeam": "Cesena",
       "awayTeam": "Catanzaro",
-      "stadium": "STADIO DINO MANUZZI",
+      "stadium": "DINO MANUZZI",
       "city": "CESENA",
       "status": "DA GIOCARE",
       "homeScore": null,
@@ -1440,8 +1440,8 @@
       "round": 11,
       "homeTeam": "Pisa",
       "awayTeam": "Sudtirol",
-      "stadium": "ARENA GARIBALDI - STADIO ROMEO ANCONETANI",
-      "city": "PISA",
+      "stadium": "ARENA GARIBALDI",
+      "city": "PIZZA",
       "status": "DA GIOCARE",
       "homeScore": null,
       "awayScore": null
@@ -1468,8 +1468,8 @@
       "round": 11,
       "homeTeam": "Padova",
       "awayTeam": "Empoli",
-      "stadium": "STADIO EUGANEO",
-      "city": "PADOVA",
+      "stadium": "STADIO COMUNALE EUGANEO",
+      "city": "PADUA",
       "status": "DA GIOCARE",
       "homeScore": null,
       "awayScore": null
