@@ -2,7 +2,7 @@
   "competition": "UEFA Champions League",
   "season": "2026/2027",
   "total": 234,
-  "updatedAt": "2026-11-04T00:52:34.519034+00:00",
+  "updatedAt": "2026-11-05T00:53:17.269655+00:00",
   "matches": [
     {
       "id": "198857",
@@ -2156,9 +2156,9 @@
       "awayTeam": "Real Madrid",
       "stadium": "ALLWYN ARENA",
       "city": "NEA FILADELFEIA",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "id": "208455",
@@ -2170,9 +2170,9 @@
       "awayTeam": "Liverpool",
       "stadium": "CHOBANI STADIUM",
       "city": "ISTANBUL",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "id": "208370",
@@ -2184,9 +2184,9 @@
       "awayTeam": "Como",
       "stadium": "STADE BOLLAERT-DELELIS",
       "city": "LENS",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 1,
+      "awayScore": 9
     },
     {
       "id": "208377",
@@ -2198,9 +2198,9 @@
       "awayTeam": "Real Betis",
       "stadium": "SIGNAL IDUNA PARK",
       "city": "DORTMUND",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "id": "208383",
@@ -2212,9 +2212,9 @@
       "awayTeam": "Manchester City",
       "stadium": "LEIPZIG RED BULL ARENA",
       "city": "LEIPZIG",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "id": "208390",
@@ -2226,9 +2226,9 @@
       "awayTeam": "Club Brugge KV",
       "stadium": "PHILIPS STADION",
       "city": "EINDHOVEN",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": "208397",
@@ -2240,9 +2240,9 @@
       "awayTeam": "Napoli",
       "stadium": "ESTÁDIO DO DRAGÃO",
       "city": "PORTO",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 4,
+      "awayScore": 1
     },
     {
       "id": "208443",
@@ -2254,9 +2254,9 @@
       "awayTeam": "Arsenal",
       "stadium": "SINOBO STADIUM",
       "city": "PRAGUE",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": "208470",
@@ -2268,9 +2268,9 @@
       "awayTeam": "Sabah FA",
       "stadium": "SR-BANK ARENA",
       "city": "STAVANGER",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 4,
+      "awayScore": 1
     },
     {
       "id": "208406",
