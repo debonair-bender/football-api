@@ -2,7 +2,7 @@
   "competition": "Serie B",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-05T12:58:43.802850+00:00",
+  "updatedAt": "2026-11-07T00:51:06.144431+00:00",
   "matches": [
     {
       "id": "202519",
@@ -1414,9 +1414,9 @@
       "awayTeam": "Palermo",
       "stadium": "CINO E LILLO DEL DUCA",
       "city": "ASCOLI PICENO",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": "202612",
