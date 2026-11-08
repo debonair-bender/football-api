@@ -2,7 +2,7 @@
   "competition": "Serie A",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-07T00:50:59.691795+00:00",
+  "updatedAt": "2026-11-08T00:51:16.990939+00:00",
   "matches": [
     {
       "id": "186094",
@@ -1428,9 +1428,9 @@
       "awayTeam": "Frosinone",
       "stadium": "UNIPOL DOMUS",
       "city": "CAGLIARI",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 1,
+      "awayScore": 0
     },
     {
       "id": "186199",
@@ -1442,9 +1442,9 @@
       "awayTeam": "Lecce",
       "stadium": "STADIO OLIMPICO GRANDE TORINO",
       "city": "TURIN",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": "186202",
@@ -1456,9 +1456,9 @@
       "awayTeam": "Bologna",
       "stadium": "ENNIO TARDINI",
       "city": "PARMA",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": "186197",
@@ -1470,9 +1470,9 @@
       "awayTeam": "Sassuolo",
       "stadium": "STADIO OLIMPICO",
       "city": "ROME",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 3,
+      "awayScore": 0
     },
     {
       "id": "186195",

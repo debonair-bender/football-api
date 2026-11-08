@@ -2,7 +2,7 @@
   "competition": "Serie B",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-07T00:51:06.144431+00:00",
+  "updatedAt": "2026-11-08T00:51:24.258471+00:00",
   "matches": [
     {
       "id": "202519",
@@ -1428,9 +1428,9 @@
       "awayTeam": "Catanzaro",
       "stadium": "DINO MANUZZI",
       "city": "CESENA",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 1,
+      "awayScore": 0
     },
     {
       "id": "202614",
@@ -1442,9 +1442,9 @@
       "awayTeam": "Sudtirol",
       "stadium": "ARENA GARIBALDI",
       "city": "PIZZA",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 2,
+      "awayScore": 2
     },
     {
       "id": "202615",
@@ -1456,9 +1456,9 @@
       "awayTeam": "Arezzo",
       "stadium": "STADIO ROMEO MENTI",
       "city": "CASTELLAMMARE DI STABIA",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 1,
+      "awayScore": 0
     },
     {
       "id": "202616",
@@ -1470,9 +1470,9 @@
       "awayTeam": "Empoli",
       "stadium": "STADIO COMUNALE EUGANEO",
       "city": "PADUA",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 2,
+      "awayScore": 2
     },
     {
       "id": "202619",
@@ -1484,9 +1484,9 @@
       "awayTeam": "Hellas Verona",
       "stadium": "STADIO DANILO MARTELLI",
       "city": "MANTOVA",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": "202610",
@@ -1498,9 +1498,9 @@
       "awayTeam": "Avellino",
       "stadium": "STADIO CIRO VIGORITO",
       "city": "BENEVENTO",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": "202613",
