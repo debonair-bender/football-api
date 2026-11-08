@@ -2,7 +2,7 @@
   "competition": "Serie A",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-08T00:51:16.990939+00:00",
+  "updatedAt": "2026-11-08T12:41:35.848796+00:00",
   "matches": [
     {
       "id": "186094",
@@ -1484,9 +1484,9 @@
       "awayTeam": "Lazio",
       "stadium": "MARADONA STADIUM",
       "city": "NAPLES",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": "186196",
