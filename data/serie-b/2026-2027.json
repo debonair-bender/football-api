@@ -2,7 +2,7 @@
   "competition": "Serie B",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-08T00:51:24.258471+00:00",
+  "updatedAt": "2026-11-09T00:54:08.046164+00:00",
   "matches": [
     {
       "id": "202519",
@@ -1512,9 +1512,9 @@
       "awayTeam": "Modena",
       "stadium": "STADIO COMUNALE",
       "city": "CHIAVARI",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 0,
+      "awayScore": 2
     },
     {
       "id": "202617",
@@ -1526,9 +1526,9 @@
       "awayTeam": "Sampdoria",
       "stadium": "STADIO DEI MARMI",
       "city": "CARRARA",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": "202618",
@@ -1540,9 +1540,9 @@
       "awayTeam": "Cremonese",
       "stadium": "STADIO ROMEO MENTI",
       "city": "VICENZA",
-      "status": "DA GIOCARE",
-      "homeScore": null,
-      "awayScore": null
+      "status": "GIOCATA",
+      "homeScore": 1,
+      "awayScore": 4
     },
     {
       "id": "202620",

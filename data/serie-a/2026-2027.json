@@ -2,7 +2,7 @@
   "competition": "Serie A",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-08T12:41:35.848796+00:00",
+  "updatedAt": "2026-11-09T00:54:01.192230+00:00",
   "matches": [
     {
       "id": "186094",
@@ -1484,8 +1484,8 @@
       "awayTeam": "Lazio",
       "stadium": "MARADONA STADIUM",
       "city": "NAPLES",
-      "status": "LIVE",
-      "homeScore": 0,
+      "status": "PLAYED",
+      "homeScore": 1,
       "awayScore": 1
     },
     {
@@ -1498,9 +1498,9 @@
       "awayTeam": "AC Milan",
       "stadium": "LUIGI FERRARIS",
       "city": "GENOA",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": "186203",
@@ -1512,9 +1512,9 @@
       "awayTeam": "Atalanta",
       "stadium": "STADIO BRIANTEO",
       "city": "MONZA",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": "186200",
@@ -1526,9 +1526,9 @@
       "awayTeam": "Como",
       "stadium": "SAN SIRO/GIUSEPPE MEAZZA",
       "city": "MILAN",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 2,
+      "awayScore": 0
     },
     {
       "id": "186198",
@@ -1540,9 +1540,9 @@
       "awayTeam": "Juventus",
       "stadium": "STADIO ARTEMIO FRANCHI",
       "city": "FLORENCE",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "PLAYED",
+      "homeScore": 2,
+      "awayScore": 2
     },
     {
       "id": "186204",
