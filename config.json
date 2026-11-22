@@ -8,7 +8,8 @@
         "2026-2027": {
           "enabled": true
         }
-      }
+      },
+      "espn_id": "ita.1"
     },
     "serie-b": {
       "name": "Serie B",
@@ -18,7 +19,8 @@
         "2026-2027": {
           "enabled": true
         }
-      }
+      },
+      "espn_id": "ita.2"
     },
     "champions-league": {
       "name": "UEFA Champions League",
@@ -28,7 +30,12 @@
         "2026-2027": {
           "enabled": true
         }
-      }
+      },
+      "espn_id": "uefa.champions"
     }
+  },
+  "settings": {
+    "timezone": "Europe/Rome",
+    "request_timeout_seconds": 20
   }
 }
