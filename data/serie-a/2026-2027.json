@@ -2,7 +2,7 @@
   "competition": "Serie A",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-22T18:28:33.848600+00:00",
+  "updatedAt": "2026-11-22T21:09:53.646243+00:00",
   "matches": [
     {
       "id": "186094",
@@ -1659,7 +1659,7 @@
       "awayTeam": "Frosinone",
       "stadium": "San Siro",
       "city": "Milano",
-      "status": "LIVE",
+      "status": "FINISHED",
       "homeScore": 5,
       "awayScore": 1,
       "espnId": "401874989"
@@ -1674,9 +1674,9 @@
       "awayTeam": "Inter",
       "stadium": "New Balance Arena",
       "city": "Bergamo",
-      "status": "SCHEDULED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "LIVE",
+      "homeScore": 1,
+      "awayScore": 3,
       "espnId": "401875001"
     },
     {
