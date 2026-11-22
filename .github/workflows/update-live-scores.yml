@@ -2,14 +2,12 @@ name: Update Football Live Scores
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
 
 concurrency:
-  group: football-data-update
+  group: update-live-scores
   cancel-in-progress: false
 
 jobs:
