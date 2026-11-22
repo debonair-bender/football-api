@@ -1,129 +1,99 @@
-"""Shared Matchesio collector; intended only for permitted automated access."""
+"""Refresh the weekly calendar from ESPN while retaining the seasonal archive."""
 import json
 import re
-import time
-from collections import Counter
-from datetime import datetime, timezone
+import unicodedata
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urljoin
+from zoneinfo import ZoneInfo
 
-import requests
-from bs4 import BeautifulSoup
+from urllib.request import urlopen
 
-SEASON = "2026/2027"
-SEASON_FILE = SEASON.replace("/", "-")
 ROOT = Path(__file__).resolve().parents[1]
+ROME = ZoneInfo("Europe/Rome")
+ALIASES = {
+    "aekathensfc": "aekathens", "sabahfk": "sabahfa", "vikingfk": "viking",
+    "internazionale": "inter", "usavellino": "avellino",
+    "vicenza": "vicenzavirtus", "lrvicenza": "vicenzavirtus",
+    "bayernmunich": "bayernmunchen", "olympiacos": "olympiakospiraeus",
+    "sportinglisbon": "sportingcp", "clubbrugge": "clubbruggekv",
+    "slaviaprague": "slaviapraha", "parissaintgermain": "psg",
+    "unionstgilloise": "unionsaintgilloise", "lyonnais": "lyon",
+    "redstarbelgrade": "fkcrvenazvezda", "fcbarcelona": "barcelona",
+}
 
 
-def parse_match(row):
-    def txt(selector):
-        el = row.select_one(selector)
-        return el.get_text(" ", strip=True) if el else None
-
-    score_text = txt(".score-pill")
-    score = re.search(r"(\d+)\s*[-–—]\s*(\d+)", score_text or "")
-    timestamp = row.get("data-time")
-    round_raw = row.get("data-matchday")
-    return {
-        "id": row.get("data-match-id"),
-        "timestamp": int(timestamp) if timestamp and timestamp.isdigit() else None,
-        "date": row.get("data-day"),
-        "time": txt(".match-time"),
-        "round": int(round_raw) if round_raw and round_raw.isdigit() else None,
-        "homeTeam": txt(".match-team-home .team-name") or row.get("data-home"),
-        "awayTeam": txt(".match-team-away .team-name") or row.get("data-away"),
-        "stadium": row.get("data-venue"),
-        "city": row.get("data-city"),
-        "status": row.get("data-status"),
-        "homeScore": int(score.group(1)) if score else None,
-        "awayScore": int(score.group(2)) if score else None,
-    }
+def team_key(name):
+    plain = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
+    key = re.sub(r"[^a-z0-9]", "", plain.lower())
+    return ALIASES.get(key, key)
 
 
-def collect(*, slug, competition, base_url, expected_matches=None, expected_rounds=None):
-    """Crawl pages until source explicitly sets has_next=false.
+def names(side):
+    team = side["team"]
+    return {team_key(team[k]) for k in ("displayName", "shortDisplayName", "name") if team.get(k)}
 
-    Assumes the same JSON + match-row structure confirmed for Serie B.
-    It has not yet been verified against Serie A / Champions endpoints.
-    """
-    session = requests.Session()
-    session.headers.update({
-        "User-Agent": "FootballCalendarSync/1.0 (automated calendar retrieval)",
-        "Accept": "application/json",
-    })
-    page = 1
-    visited = set()
-    matches = {}
-    # Safety guard against endless traversal; not a page count to configure.
-    safety_limit = 1000
-    while True:
-        if page in visited or len(visited) >= safety_limit:
-            raise RuntimeError(f"{slug}: pagination loop or excessive pages")
-        visited.add(page)
-        response = session.get(base_url, params={"page": page}, timeout=30)
-        response.raise_for_status()
-        data = response.json()
-        if not isinstance(data, dict) or not isinstance(data.get("html"), str):
-            raise ValueError(f"{slug}: page {page}: unexpected JSON format")
-        soup = BeautifulSoup(data["html"], "html.parser")
-        rows = soup.select("tr.match-row[data-match-id]")
-        if not rows:
-            raise ValueError(f"{slug}: page {page}: no match rows")
-        for row in rows:
-            m = parse_match(row)
-            if not m["id"] or not m["homeTeam"] or not m["awayTeam"] or not m["date"]:
-                raise ValueError(f"{slug}: incomplete match on page {page}: {m}")
-            if m["id"] in matches and matches[m["id"]] != m:
-                raise ValueError(f"{slug}: conflicting duplicate id {m['id']}")
-            matches[m["id"]] = m
-        print(f"{slug} page {page}: {len(rows)} rows; unique matches: {len(matches)}")
-        if data.get("has_next") is False:
-            break
-        if data.get("has_next") is not True:
-            raise ValueError(f"{slug}: page {page}: has_next missing or invalid")
-        next_page = data.get("next_page")
-        if type(next_page) is not int or next_page <= page:
-            raise ValueError(f"{slug}: page {page}: invalid next_page={next_page}")
-        page = next_page
-        time.sleep(1)
 
-    result_matches = sorted(matches.values(), key=lambda m: (m["timestamp"] or 0, m["id"]))
-    if expected_matches is not None and len(result_matches) != expected_matches:
-        raise ValueError(f"{slug}: expected {expected_matches} matches; got {len(result_matches)}")
-    if expected_rounds is not None:
-        counts = Counter(m["round"] for m in result_matches)
-        if set(counts) != set(range(1, expected_rounds + 1)):
-            raise ValueError(f"{slug}: incomplete rounds: {sorted(counts)}")
-    
-    # Percorso automatico per competizione e stagione
-    output_file = ROOT / "data" / slug / f"{SEASON_FILE}.json"
+def update_match(rows, event):
+    game = event["competitions"][0]
+    sides = {side["homeAway"]: side for side in game["competitors"]}
+    home, away = sides["home"], sides["away"]
+    kickoff = datetime.fromisoformat(event["date"].replace("Z", "+00:00")).astimezone(timezone.utc)
+    espn_id = str(event["id"])
+    existing = next((row for row in rows if row.get("espnId") == espn_id), None)
+    if existing is None:
+        home_names, away_names = names(home), names(away)
+        candidates = [row for row in rows if not row.get("espnId")
+                      and team_key(row["homeTeam"]) in home_names
+                      and team_key(row["awayTeam"]) in away_names]
+        if len(candidates) > 1:
+            candidates = [row for row in candidates if row["date"] == kickoff.date().isoformat()]
+            if len(candidates) != 1:
+                raise ValueError(f"Ambiguous legacy fixture: {event['name']}")
+        existing = candidates[0] if candidates else None
+    if existing is None:
+        existing = {"id": "espn-" + espn_id, "homeTeam": home["team"]["displayName"],
+                    "awayTeam": away["team"]["displayName"], "round": None}
+        rows.append(existing)
+    status = game["status"]["type"]
+    mapped = {"STATUS_POSTPONED": "PST", "STATUS_CANCELED": "CANC",
+              "STATUS_SUSPENDED": "SUSP", "STATUS_HALFTIME": "HT"}
+    state = status["state"]
+    venue = game.get("venue") or {}
+    def score(side):
+        value = side.get("score")
+        return int(value) if state != "pre" and value is not None else None
+    existing.update(espnId=espn_id, timestamp=int(kickoff.timestamp()),
+                    date=kickoff.strftime("%Y-%m-%d"), time=kickoff.strftime("%H:%M"),
+                    stadium=venue.get("fullName") or existing.get("stadium"),
+                    city=(venue.get("address") or {}).get("city") or existing.get("city"),
+                    status=mapped.get(status["name"], {"pre": "SCHEDULED", "in": "LIVE", "post": "FINISHED"}[state]),
+                    homeScore=score(home), awayScore=score(away))
 
-    # Crea automaticamente le cartelle mancanti
-    output_file.parent.mkdir(parents=True, exist_ok=True)
 
-    # Evita di riscrivere file con dati identici
-    if output_file.exists():
-        previous = json.loads(output_file.read_text(encoding="utf-8"))
-
-        if previous.get("matches") == result_matches:
-            print(f"{slug}: nessuna modifica")
-            return
-
-    result = {
-        "competition": competition,
-        "season": SEASON,
-        "total": len(result_matches),
-        "updatedAt": datetime.now(timezone.utc).isoformat(),
-        "matches": result_matches
-    }
-
-    # Scrittura temporanea per evitare file incompleti
-    temp_file = output_file.with_suffix(".json.tmp")
-
-    temp_file.write_text(
-        json.dumps(result, indent=2, ensure_ascii=False),
-        encoding="utf-8"
-    )
-
-    temp_file.replace(output_file)
-    print(f"{slug}: salvato {output_file}")
+def collect(*, slug, competition, league):
+    today = datetime.now(ROME).date()
+    season = "2026/2027"
+    target = ROOT / "data" / slug / "2026-2027.json"
+    previous = json.loads(target.read_text(encoding="utf-8"))
+    rows = [dict(row) for row in previous["matches"]]
+    count = 0
+    for offset in range(-1, 7):
+        day = today + timedelta(days=offset)
+        url = (f"https://site.api.espn.com/apis/site/v2/sports/soccer/{league}/scoreboard"
+               f"?dates={day:%Y%m%d}&limit=200")
+        with urlopen(url, timeout=30) as response:
+            events = json.load(response)["events"]
+        if not isinstance(events, list):
+            raise ValueError(f"Invalid ESPN response for {league} on {day}")
+        for event in events:
+            if event["season"]["year"] == 2026:
+                update_match(rows, event)
+                count += 1
+    rows.sort(key=lambda row: (row["timestamp"] or 0, row["id"]))
+    if previous["matches"] != rows:
+        payload = dict(competition=competition, season=season, total=len(rows),
+                       updatedAt=datetime.now(timezone.utc).isoformat(), matches=rows)
+        temporary = target.with_suffix(".tmp")
+        temporary.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+        temporary.replace(target)
+    print(f"{slug}: checked {count} fixtures, {len(rows)} in season archive")
