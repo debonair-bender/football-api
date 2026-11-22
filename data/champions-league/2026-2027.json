@@ -2,7 +2,7 @@
   "competition": "UEFA Champions League",
   "season": "2026/2027",
   "total": 234,
-  "updatedAt": "2026-11-05T00:53:17.269655+00:00",
+  "updatedAt": "2026-11-22T18:28:36.417160+00:00",
   "matches": [
     {
       "id": "198857",
@@ -2280,11 +2280,12 @@
       "round": 5,
       "homeTeam": "Bodo/Glimt",
       "awayTeam": "Lask Linz",
-      "stadium": "ASPMYRA STADION",
-      "city": "BODØ",
-      "status": "TO BE PLAYED",
+      "stadium": "Aspmyra Stadion",
+      "city": "Bodø/Glimt",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915380"
     },
     {
       "id": "208459",
@@ -2294,11 +2295,12 @@
       "round": 5,
       "homeTeam": "Galatasaray",
       "awayTeam": "Aston Villa",
-      "stadium": "RAMS PARK",
-      "city": "ISTANBUL",
-      "status": "TO BE PLAYED",
+      "stadium": "RAMS Park",
+      "city": "Istanbul",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915300"
     },
     {
       "id": "208348",
@@ -2308,11 +2310,12 @@
       "round": 5,
       "homeTeam": "Arsenal",
       "awayTeam": "Borussia Dortmund",
-      "stadium": "EMIRATES STADIUM",
-      "city": "LONDON",
-      "status": "TO BE PLAYED",
+      "stadium": "Emirates Stadium",
+      "city": "London",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915295"
     },
     {
       "id": "208353",
@@ -2322,11 +2325,12 @@
       "round": 5,
       "homeTeam": "Manchester City",
       "awayTeam": "Napoli",
-      "stadium": "ETIHAD STADIUM",
-      "city": "MANCHESTER",
-      "status": "TO BE PLAYED",
+      "stadium": "Etihad Stadium",
+      "city": "Manchester",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915379"
     },
     {
       "id": "208384",
@@ -2336,11 +2340,12 @@
       "round": 5,
       "homeTeam": "RB Leipzig",
       "awayTeam": "Lens",
-      "stadium": "RED BULL ARENA",
-      "city": "LEIPZIG",
-      "status": "TO BE PLAYED",
+      "stadium": "Red Bull Arena",
+      "city": "Leipzig",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915299"
     },
     {
       "id": "208392",
@@ -2350,11 +2355,12 @@
       "round": 5,
       "homeTeam": "Feyenoord",
       "awayTeam": "FC Porto",
-      "stadium": "DE KUIP",
-      "city": "ROTTERDAM",
-      "status": "TO BE PLAYED",
+      "stadium": "De Kuip",
+      "city": "Rotterdam",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915294"
     },
     {
       "id": "208432",
@@ -2364,11 +2370,12 @@
       "round": 5,
       "homeTeam": "Real Madrid",
       "awayTeam": "PSV Eindhoven",
-      "stadium": "",
-      "city": "MADRID",
-      "status": "TO BE PLAYED",
+      "stadium": "Santiago Bernabéu",
+      "city": "Madrid",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915298"
     },
     {
       "id": "208465",
@@ -2378,11 +2385,12 @@
       "round": 5,
       "homeTeam": "Slovan Bratislava",
       "awayTeam": "Real Betis",
-      "stadium": "",
-      "city": "BRATISLAVA",
-      "status": "TO BE PLAYED",
+      "stadium": "Národny Futbalovy Stadión",
+      "city": "Bratislava",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915297"
     },
     {
       "id": "208474",
@@ -2392,11 +2400,12 @@
       "round": 5,
       "homeTeam": "Como",
       "awayTeam": "AEK Athens FC",
-      "stadium": "",
-      "city": "",
-      "status": "TO BE PLAYED",
+      "stadium": "Giuseppe Sinigaglia",
+      "city": "Como",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915296"
     },
     {
       "id": "208446",
@@ -2406,11 +2415,12 @@
       "round": 5,
       "homeTeam": "Slavia Praha",
       "awayTeam": "Villarreal",
-      "stadium": "FORTUNA ARENA",
-      "city": "PRAGUE",
-      "status": "TO BE PLAYED",
+      "stadium": "Fortuna Arena",
+      "city": "Prague",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915293"
     },
     {
       "id": "208481",
@@ -2420,11 +2430,12 @@
       "round": 5,
       "homeTeam": "Sabah FA",
       "awayTeam": "Barcelona",
-      "stadium": "BANK RESPUBLIKA ARENA",
-      "city": "ABSHERON",
-      "status": "TO BE PLAYED",
+      "stadium": "Baku Olympic Stadium",
+      "city": "Baku",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915378"
     },
     {
       "id": "208359",
@@ -2434,11 +2445,12 @@
       "round": 5,
       "homeTeam": "Lille",
       "awayTeam": "Bayern München",
-      "stadium": "STADE PIERRE-MAUROY",
-      "city": "VILLENEUVE D'ASCQ",
-      "status": "TO BE PLAYED",
+      "stadium": "Decathlon Arena - Stade Pierre-Mauroy",
+      "city": "Lille",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915377"
     },
     {
       "id": "208363",
@@ -2448,11 +2460,12 @@
       "round": 5,
       "homeTeam": "Paris Saint Germain",
       "awayTeam": "AS Roma",
-      "stadium": "PARC DES PRINCES",
-      "city": "PARIS",
-      "status": "TO BE PLAYED",
+      "stadium": "Parc des Princes",
+      "city": "Paris",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915374"
     },
     {
       "id": "208399",
@@ -2462,11 +2475,12 @@
       "round": 5,
       "homeTeam": "Sporting CP",
       "awayTeam": "Manchester United",
-      "stadium": "",
-      "city": "LISBON",
-      "status": "TO BE PLAYED",
+      "stadium": "Estádio José Alvalade",
+      "city": "Lisbon",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915373"
     },
     {
       "id": "208416",
@@ -2476,11 +2490,12 @@
       "round": 5,
       "homeTeam": "Inter",
       "awayTeam": "VfB Stuttgart",
-      "stadium": "",
-      "city": "MILAN",
-      "status": "TO BE PLAYED",
+      "stadium": "San Siro",
+      "city": "Milano",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915376"
     },
     {
       "id": "208426",
@@ -2490,11 +2505,12 @@
       "round": 5,
       "homeTeam": "Atletico Madrid",
       "awayTeam": "Viking",
-      "stadium": "METROPOLITANO STADIUM",
-      "city": "MADRID",
-      "status": "TO BE PLAYED",
+      "stadium": "Riyadh Air Metropolitano",
+      "city": "Madrid",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915291"
     },
     {
       "id": "208442",
@@ -2504,11 +2520,12 @@
       "round": 5,
       "homeTeam": "Shakhtar Donetsk",
       "awayTeam": "Fenerbahçe",
-      "stadium": "STAMFORD BRIDGE",
-      "city": "LONDON",
-      "status": "TO BE PLAYED",
+      "stadium": "Stamford Bridge",
+      "city": "London",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915375"
     },
     {
       "id": "208447",
@@ -2518,11 +2535,12 @@
       "round": 5,
       "homeTeam": "Club Brugge KV",
       "awayTeam": "Liverpool",
-      "stadium": "JAN BREYDEL STADION",
-      "city": "BRUGGE",
-      "status": "TO BE PLAYED",
+      "stadium": "Jan Breydel Stadium",
+      "city": "Brugge",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401915292"
     },
     {
       "id": "208430",
