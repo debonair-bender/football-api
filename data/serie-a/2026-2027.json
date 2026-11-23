@@ -2,7 +2,7 @@
   "competition": "Serie A",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-22T21:09:53.646243+00:00",
+  "updatedAt": "2026-11-23T00:45:16.779999+00:00",
   "matches": [
     {
       "id": "186094",
@@ -1674,9 +1674,9 @@
       "awayTeam": "Inter",
       "stadium": "New Balance Arena",
       "city": "Bergamo",
-      "status": "LIVE",
-      "homeScore": 1,
-      "awayScore": 3,
+      "status": "FINISHED",
+      "homeScore": 4,
+      "awayScore": 4,
       "espnId": "401875001"
     },
     {
@@ -1755,18 +1755,49 @@
       "espnId": "401874977"
     },
     {
-      "id": "186214",
-      "timestamp": 1795973400,
+      "id": "186216",
+      "timestamp": 1795951800,
       "date": "2026-11-29",
-      "time": "17:30",
+      "time": "11:30",
+      "round": 13,
+      "homeTeam": "Udinese",
+      "awayTeam": "Fiorentina",
+      "stadium": "Stadio Friuli",
+      "city": "Udine",
+      "status": "SCHEDULED",
+      "homeScore": null,
+      "awayScore": null,
+      "espnId": "401875031"
+    },
+    {
+      "id": "186214",
+      "timestamp": 1795960800,
+      "date": "2026-11-29",
+      "time": "14:00",
       "round": 13,
       "homeTeam": "Sassuolo",
       "awayTeam": "Napoli",
-      "stadium": "",
-      "city": "REGGIO EMILIA",
-      "status": "TO BE PLAYED",
+      "stadium": "Mapei Stadium",
+      "city": "Reggio Emilia",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401874992"
+    },
+    {
+      "id": "186217",
+      "timestamp": 1795971600,
+      "date": "2026-11-29",
+      "time": "17:00",
+      "round": 13,
+      "homeTeam": "AS Roma",
+      "awayTeam": "Monza",
+      "stadium": "Olimpico",
+      "city": "Roma",
+      "status": "SCHEDULED",
+      "homeScore": null,
+      "awayScore": null,
+      "espnId": "401874769"
     },
     {
       "id": "186215",
@@ -1778,34 +1809,6 @@
       "awayTeam": "AC Milan",
       "stadium": "UNIPOL DOMUS",
       "city": "CAGLIARI",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": "186216",
-      "timestamp": 1795973400,
-      "date": "2026-11-29",
-      "time": "17:30",
-      "round": 13,
-      "homeTeam": "Udinese",
-      "awayTeam": "Fiorentina",
-      "stadium": "BLUENERGY STADIUM - STADIO FRIULI",
-      "city": "UDINE",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": "186217",
-      "timestamp": 1795973400,
-      "date": "2026-11-29",
-      "time": "17:30",
-      "round": 13,
-      "homeTeam": "AS Roma",
-      "awayTeam": "Monza",
-      "stadium": "STADIO OLIMPICO",
-      "city": "ROME",
       "status": "TO BE PLAYED",
       "homeScore": null,
       "awayScore": null
@@ -1826,17 +1829,18 @@
     },
     {
       "id": "186223",
-      "timestamp": 1795973400,
+      "timestamp": 1795981500,
       "date": "2026-11-29",
-      "time": "17:30",
+      "time": "19:45",
       "round": 13,
       "homeTeam": "Como",
       "awayTeam": "Juventus",
-      "stadium": "STADIO GIUSEPPE SINIGAGLIA",
-      "city": "COMO",
-      "status": "TO BE PLAYED",
+      "stadium": "Giuseppe Sinigaglia",
+      "city": "Como",
+      "status": "SCHEDULED",
       "homeScore": null,
-      "awayScore": null
+      "awayScore": null,
+      "espnId": "401874994"
     },
     {
       "id": "186224",
