@@ -2,9 +2,9 @@
   "competition": "UEFA Champions League",
   "espnId": "uefa.champions",
   "date": "2026-11-24",
-  "updatedAt": "2026-11-24T19:36:59.704720+00:00",
+  "updatedAt": "2026-11-24T19:39:44.462868+00:00",
   "total": 9,
-  "liveCount": 1,
+  "liveCount": 0,
   "matches": [
     {
       "id": "401915300",
@@ -13,14 +13,14 @@
       "awayTeam": "Aston Villa",
       "homeScore": 1,
       "awayScore": 0,
-      "status": "SECOND_HALF",
-      "espnStatus": "STATUS_IN_PROGRESS",
-      "statusDetail": "90'+5'",
-      "state": "in",
-      "elapsed": "90'+5'",
+      "status": "FINISHED",
+      "espnStatus": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
+      "state": "post",
+      "elapsed": "90'+7'",
       "period": 2,
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "venue": "RAMS Park"
     },
     {
