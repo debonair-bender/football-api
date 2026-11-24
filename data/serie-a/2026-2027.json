@@ -2,7 +2,7 @@
   "competition": "Serie A",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-23T00:45:16.779999+00:00",
+  "updatedAt": "2026-11-24T00:48:27.473733+00:00",
   "matches": [
     {
       "id": "186094",
@@ -1689,9 +1689,9 @@
       "awayTeam": "Fiorentina",
       "stadium": "U-Power Stadium",
       "city": "Monza",
-      "status": "SCHEDULED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "FINISHED",
+      "homeScore": 3,
+      "awayScore": 0,
       "espnId": "401875009"
     },
     {
@@ -1800,34 +1800,6 @@
       "espnId": "401874769"
     },
     {
-      "id": "186215",
-      "timestamp": 1795973400,
-      "date": "2026-11-29",
-      "time": "17:30",
-      "round": 13,
-      "homeTeam": "Cagliari",
-      "awayTeam": "AC Milan",
-      "stadium": "UNIPOL DOMUS",
-      "city": "CAGLIARI",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": "186222",
-      "timestamp": 1795973400,
-      "date": "2026-11-29",
-      "time": "17:30",
-      "round": 13,
-      "homeTeam": "Lecce",
-      "awayTeam": "Atalanta",
-      "stadium": "STADIO VIA DEL MARE",
-      "city": "LECCE",
-      "status": "TO BE PLAYED",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
       "id": "186223",
       "timestamp": 1795981500,
       "date": "2026-11-29",
@@ -1841,6 +1813,36 @@
       "homeScore": null,
       "awayScore": null,
       "espnId": "401874994"
+    },
+    {
+      "id": "186222",
+      "timestamp": 1796059800,
+      "date": "2026-11-30",
+      "time": "17:30",
+      "round": 13,
+      "homeTeam": "Lecce",
+      "awayTeam": "Atalanta",
+      "stadium": "Via Del Mare",
+      "city": "Lecce",
+      "status": "SCHEDULED",
+      "homeScore": null,
+      "awayScore": null,
+      "espnId": "401875095"
+    },
+    {
+      "id": "186215",
+      "timestamp": 1796067900,
+      "date": "2026-11-30",
+      "time": "19:45",
+      "round": 13,
+      "homeTeam": "Cagliari",
+      "awayTeam": "AC Milan",
+      "stadium": "Unipol Domus",
+      "city": "Cagliari",
+      "status": "SCHEDULED",
+      "homeScore": null,
+      "awayScore": null,
+      "espnId": "401875019"
     },
     {
       "id": "186224",
