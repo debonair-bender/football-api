@@ -2,7 +2,7 @@
   "competition": "Serie B",
   "season": "2026/2027",
   "total": 380,
-  "updatedAt": "2026-11-24T00:48:28.195882+00:00",
+  "updatedAt": "2026-11-24T18:47:27.575360+00:00",
   "matches": [
     {
       "id": "202519",
@@ -1703,9 +1703,9 @@
       "awayTeam": "Catanzaro",
       "stadium": "Romeo Menti di Castellammare",
       "city": "Castellammare di Stabia",
-      "status": "SCHEDULED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 1,
       "espnId": "401899536"
     },
     {

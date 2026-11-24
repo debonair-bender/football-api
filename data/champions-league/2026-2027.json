@@ -2,7 +2,7 @@
   "competition": "UEFA Champions League",
   "season": "2026/2027",
   "total": 234,
-  "updatedAt": "2026-11-22T18:28:36.417160+00:00",
+  "updatedAt": "2026-11-24T18:47:28.479873+00:00",
   "matches": [
     {
       "id": "198857",
@@ -2282,9 +2282,9 @@
       "awayTeam": "Lask Linz",
       "stadium": "Aspmyra Stadion",
       "city": "Bodø/Glimt",
-      "status": "SCHEDULED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 0,
       "espnId": "401915380"
     },
     {
@@ -2297,9 +2297,9 @@
       "awayTeam": "Aston Villa",
       "stadium": "RAMS Park",
       "city": "Istanbul",
-      "status": "SCHEDULED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "HT",
+      "homeScore": 0,
+      "awayScore": 0,
       "espnId": "401915300"
     },
     {
